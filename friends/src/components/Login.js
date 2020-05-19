@@ -33,7 +33,7 @@ const Login = props =>{
 
     return(
         <div>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <label>
                     <input
                         name="username"
@@ -52,8 +52,8 @@ const Login = props =>{
                         onChange={handleChange}
                     />
                 </label>
+                <button>Login</button>
             </form>
-            <button onClick={handleSubmit}>Login</button>
         </div>
     )
 }
