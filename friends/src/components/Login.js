@@ -32,8 +32,8 @@ const Login = props =>{
     }
 
     return(
-        <div>
-            <form onSubmit={handleSubmit}>
+        <div className="login-form-container">
+            <form onSubmit={handleSubmit} className="login-form">
                 <label>
                     <input
                         name="username"

@@ -55,9 +55,9 @@ const Friends = props =>{
     }
 
     return(
-        <div>
-            <div>
-            <form onSubmit={handleSubmit}>
+        <div className="friends-container">
+            <div className="friend-form-container">
+            <form onSubmit={handleSubmit} className="friend-form">
                 <label>
                     <input
                         name="name"
@@ -88,9 +88,10 @@ const Friends = props =>{
                 <button>Submit</button>
             </form>
         </div>
-            {friendsList.map( (friend, index) =>{
+        <div className="friends">
+        {friendsList.map( (friend, index) =>{
                 return(
-                    <div key={index}>
+                    <div key={index} className="friend">
                         <h3>ID: {friend.id}</h3>
                         <h3>Name: {friend.name}</h3>
                         <h3>Age: {friend.age}</h3>
@@ -98,6 +99,8 @@ const Friends = props =>{
                     </div>
                 )
             })}
+        </div>
+            
         </div>
     )
 }

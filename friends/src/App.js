@@ -9,11 +9,11 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <div>
-          <ul>
-            <li><NavLink className="nav-link" to="/">Home</NavLink></li>
-            <li><NavLink className="nav-link login" to="/login">Login</NavLink></li>
-            <li><NavLink className="nav-link friends" to="/friends">Friends</NavLink></li>
+        <div className="nav">
+          <ul className="nav-bar">
+            <li className="nav-item"><NavLink className="nav-link" to="/">Home</NavLink></li>
+            <li className="nav-item"><NavLink className="nav-link" to="/login">Login</NavLink></li>
+            <li className="nav-item"> <NavLink className="nav-link" to="/friends">Friends</NavLink></li>
           </ul>
         </div>
       </div>
